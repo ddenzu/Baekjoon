@@ -1,0 +1,8 @@
+import itertools
+a,b=map(int, input().split())
+A=[]
+for i in range(a):
+    A.append(i+1)
+npr = list(itertools.permutations(A, b))
+for j in npr:
+    print(' '.join(map(str, j)))
